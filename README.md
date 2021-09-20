@@ -2,6 +2,7 @@
 
 I am hoping that this will provide a good starting point for any project using TypeScript, React, Jest, ESLint, and Stylint.
 
+Make sure you check out the [Style Guide](docs/STYLE.md).
 
 ## Getting things running...
 
@@ -10,6 +11,7 @@ Make sure that you have installed the correct type definitions. This should be i
 Running `npm install` in the project root should get things installed correctly.
 
 Once you have finished installing the application use `npm start` to start the application in development mode.
+
 
 ## Available Scripts
 
