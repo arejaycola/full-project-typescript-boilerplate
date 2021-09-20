@@ -1,7 +1,9 @@
 import axios, { AxiosResponse } from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import './Todo.scss';
+import TodoItem from './TodoItem/TodoItem';
 
-interface TodoInterface {
+export interface TodoInterface {
 	userId: number;
 	id: number;
 	title: string;
@@ -9,7 +11,7 @@ interface TodoInterface {
 }
 
 const Todo = () => {
-	const [todos, setTodos] = useState([]);
+	const [todos, setTodos] = useState<TodoInterface[]>([]);
 
 	useEffect(() => {
 		fetchTodos();
@@ -24,13 +26,7 @@ const Todo = () => {
 		<div>
 			<h1>Todo List</h1>
 			<ul>
-				{todos.map((todo: TodoInterface): JSX.Element => {
-					return (
-						<li key={todo.id}>
-							{todo.title} - {`${todo.completed}`}
-						</li>
-					);
-				})}
+				<TodoItem todos={todos} />
 			</ul>
 		</div>
 	);

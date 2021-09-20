@@ -1,10 +1,14 @@
+# Creating a React TypeScript project
 
+To bootstrap the application run:
 
+`npm create-react-app myapp --template typescript`
 
+Make sure that you have installed the correct type definitions. This should be installed by default but I had to install it again for some reason.\
+`npm install @types/react`
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Install node-sass\
+`npm install node-sass`
 
 ## Available Scripts
 
@@ -32,3 +36,4 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
