@@ -1,6 +1,9 @@
-## Getting things running...
+## Background
 
 I am hoping that this will provide a good starting point for any project using TypeScript, React, Jest, ESLint, and Stylint.
+
+
+## Getting things running...
 
 Make sure that you have installed the correct type definitions. This should be installed by default but I had to install it again for some reason.\
 
