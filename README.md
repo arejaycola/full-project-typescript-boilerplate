@@ -1,14 +1,12 @@
-# Creating a React TypeScript project
+## Getting things running...
 
-To bootstrap the application run:
-
-`npm create-react-app myapp --template typescript`
+I am hoping that this will provide a good starting point for any project using TypeScript, React, Jest, ESLint, and Stylint.
 
 Make sure that you have installed the correct type definitions. This should be installed by default but I had to install it again for some reason.\
-`npm install @types/react`
 
-Install node-sass\
-`npm install node-sass`
+Running `npm install` in the project root should get things installed correctly.
+
+Once you have finished installing the application use `npm start` to start the application in development mode.
 
 ## Available Scripts
 
@@ -36,4 +34,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
