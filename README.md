@@ -5,7 +5,7 @@ I am hoping that this will provide a good starting point for any project using T
 
 ## Getting things running...
 
-Make sure that you have installed the correct type definitions. This should be installed by default but I had to install it again for some reason.\
+Make sure that you have installed the correct type definitions. This should be installed by default but I had to install it again for some reason.
 
 Running `npm install` in the project root should get things installed correctly.
 
