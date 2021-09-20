@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Todo from './Todo/Todo';
+import Todo from './components/Todo/Todo';
 
 import './styles/style.scss';
 
@@ -10,3 +10,4 @@ ReactDOM.render(
 	</React.StrictMode>,
 	document.getElementById('root')
 );
+
