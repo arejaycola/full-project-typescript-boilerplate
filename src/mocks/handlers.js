@@ -1,8 +1,8 @@
 import { rest } from 'msw';
 
 export const handlers = [
-	rest.get('https://jsonplaceholder.typicode.com/todos', (req, res, ctx) => {
-		return res(
+	rest.get('https://jsonplaceholder.typicode.com/todos', (req, res, ctx) =>
+		res(
 			ctx.json([
 				{
 					userId: 1,
@@ -23,6 +23,6 @@ export const handlers = [
 					completed: false,
 				},
 			])
-		);
-	})
+		)
+	),
 ];
