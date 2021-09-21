@@ -1,0 +1,12 @@
+{
+	"extends": ["stylelint-config-sass-guidelines"],
+	"plugins": ["stylelint-order"],
+	"ignoreFiles": "**/*.js",
+	"rules": {
+		"indentation": "tab",
+		"declaration-property-value-disallowed-list": null,
+		"color-named": "always-where-possible",
+		"max-nesting-depth": 3,
+		"selector-class-pattern": null
+	}
+}
