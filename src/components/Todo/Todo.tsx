@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Todo.scss';
 
 export interface TodoInterface {
@@ -29,9 +29,7 @@ const Todo = () => {
 	}, []);
 
 	const onTodoItemClick = (id: number): void => {
-		const temp = todos.filter((todo: TodoInterface): boolean => {
-			return todo.id !== id;
-		});
+		const temp = todos.filter((todo: TodoInterface): boolean => todo.id !== id);
 
 		setTodos([...temp]);
 	};
@@ -40,18 +38,18 @@ const Todo = () => {
 		<div>
 			<h1>Todo List</h1>
 			<ul>
-				{todos.map((todo: TodoInterface): JSX.Element => {
-					return (
+				{todos.map(
+					(todo: TodoInterface): JSX.Element => (
 						<li
 							key={todo.id}
-							onClick={(e): void => {
+							onClick={(): void => {
 								onTodoItemClick(todo.id);
 							}}
 						>
 							<span className="todo__title">{todo.title}</span> -<span className="todo__completed">{`${todo.completed}`}</span>
 						</li>
-					);
-				})}
+					)
+				)}
 			</ul>
 		</div>
 	);
