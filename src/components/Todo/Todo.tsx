@@ -36,7 +36,7 @@ const Todo = () => {
 
 	return (
 		<div>
-			<h1>Todo List</h1>
+			<h1>Todo List (Click to delete)</h1>
 			<ul>
 				{todos.map(
 					(todo: TodoInterface): JSX.Element => (
