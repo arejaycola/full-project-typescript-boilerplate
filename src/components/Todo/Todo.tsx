@@ -1,6 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
 import React, { useEffect, useState } from 'react';
+import Map from '../Resium/Map'
 import './Todo.scss';
+
 
 export interface TodoInterface {
 	userId: number;
@@ -27,17 +29,13 @@ const Todo = () => {
 			mounted = false;
 		};
 	}, []);
-
-	const onTodoItemClick = (id: number): void => {
-		const temp = todos.filter((todo: TodoInterface): boolean => todo.id !== id);
-
-		setTodos([...temp]);
-	};
+	console.log(todos);
 
 	return (
 		<div>
 			<h1>Todo List (Click to delete)</h1>
-			<ul>
+			<Map />
+			{/* <ul>
 				{todos.map(
 					(todo: TodoInterface): JSX.Element => (
 						<li
@@ -50,7 +48,7 @@ const Todo = () => {
 						</li>
 					)
 				)}
-			</ul>
+			</ul> */}
 		</div>
 	);
 };
